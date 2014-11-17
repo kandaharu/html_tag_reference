@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>HTMLのタグ勉強</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="xxx.js"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header><h1>header = ヘッダ</h1></header>
+      <nav>
+        <h2>nav = ナビゲータ</h2>
+        <ul class="clearfix">
+          <li><a href="#">トップページ</a></li>
+          <li><a href="#">ランキング</a></li>
+          <li><a href="#">マイページ</a></li>
+        </ul>
+      </nav>
+      <section>
+        <h2>section = セクション</h2>
+        <article>
+          <h3>article = 記事 | 記事1 見出し、まとまり、リンクなど</h3>
+          <p>p = 段落</p>
+          <div id="midashi">
+            <h1>h1 = 見出し1</h1>
+            <h2>h2 = 見出し2</h2>
+            <h3>h3 = 見出し3</h3>
+            <h4>h4 = 見出し4</h4>
+            <h5>h5 = 見出し5</h5>
+            <h6>h6 = 見出し6</h6>
+          </div>
+          <hr />
+          <p>hr = 水平線</p>
+          <hr />
+          <p>br = 改行 ここ改行→<br /></p>
+          <p><b>b = 太文字</b></p>
+          <p><i>i = イタリック</i></p>
+          <p>a = <a href="">リンク</a></p>
+          <span style="color:red">span = 一行以下の範囲でのまとまり</span>
+          <div style="color:blue">div = 複数行の範囲<br />でのまとまり</div>
+          <img src="" alt="画像の説明" />
+        </article>
+        <article>
+          <h3>記事2 フォーム</h3>
+          <form>
+            <fieldset>
+              <legend>input系</legend>
+              <label for="input-text">テキスト入力(input type="text") :</label>
+              <input type="text" id="input-text" />
+              <br />
+
+              <label for="input-search">テキスト検索(input type="search") : </label>
+              <input type="search" id="input-search" />
+              <br />
+
+              <label for="input-password">パスワード(input type="password") : </label>
+              <input type="password" id="input-password" />
+              <br />
+
+              <label>チェックボックス(input type="checkbox") : </label>
+              <label><input type="checkbox" name="checkbox" value="1" />面白い</label>
+              <label><input type="checkbox" name="checkbox" value="2" checked="checked" />役に立つ</label>
+              <label><input type="checkbox" name="checkbox" value="3" />いまいち</label>
+              <br />
+
+              <label>ラジオボタン(input type="radio") : </label>
+              <label><input type="radio" name="radio" value="good" checked="checked"/>よい</label>
+              <label><input type="radio" name="radio" value="bad" />悪い</label>
+              <br/>
+
+              <label for="input-hidden">隠し要素(input type="hidden") :</label>
+              <input type="hidden" id="input-hidden" value="HTMLに見せたくない要素を隠しで入力" />
+              <br />
+
+              <label for="input-url">URL(input type="url") : </label>
+              <input type="url" id="input-url" />
+              <br />
+
+              <label for="input-email">メールアドレス(input type="email") : </label>
+              <input type="email" id="input-email" />
+              <br />
+
+              <label for="input-date">年月日(input type="date") : </label>
+              <input type="date" id="input-date" />
+              <br />
+
+              <label for="input-time">時刻(input type="time") : </label>
+              <input type="time" id="input-time" />
+              <br />
+
+              <label for="input-number">数値(input type="number") : </label>
+              <input type="number" id="input-number" />
+              <br />
+
+              <label for="input-range">レンジ(input type="range") : </label>
+              <input type="range" id="input-range" min="0" max="100" step="5" onchange="console.log(this.valueAsNumber)" />
+              <br />
+
+              <label for="input-file">ファイル選択(input type="file") : </label>
+              <input type="file" id="input-file" />
+              <br />
+
+              <label for="input-autofocus">オートフォーカス(input autofocus) : </label>
+              <input type="text" id="input-autofocus" autofocus="autofocus" />
+              <br />
+
+              <label for="input-placeholder">初期文字入力(input placeholder) : </label>
+              <input type="text" id="input-placeholder" placeholder="placeholder" />
+              <br />
+
+              <label for="input-required">入力必須(input required) : </label>
+              <input type="text" id="input-required" required="required" />
+              <br />
+            </fieldset>
+            <fieldset>
+              <legend>その他</legend>
+              <label for="button">ボタン(button) : </label>
+              <button id="button">ボタン</button>
+              <br />
+
+              <label for="select">セレクトボックス(select - option) : </label>
+              <select id="select">
+                <option value="1">選択肢1</option>
+                <option value="2">選択肢2</option>
+                <option value="3" selected="selected">選択肢3</option>
+              </select>
+              <br />
+
+              <label for="textarea">テキストエリア(textarea)</label>
+              <textarea id="textarea"></textarea>
+            </fieldset>
+            <label for="input-submit">決定ボタン(input type="submit") : </label>
+            <input type="submit" id="input-submit" />
+
+            <label for="input-reset">リセットボタン(input type="reset") : </label>
+            <input type="reset" />
+          </form>
+        </article>
+
+        <article>
+          <h3>記事3 テーブル、リスト</h3>
+          <p>ul = リスト</p>
+          <ul>
+            <li>li = リスト</li>
+            <li>li = リスト</li>
+            <li>li = リスト</li>
+          </ul>
+          <hr />
+
+          <p>ol = 番号付きリスト</p>
+          <ol>
+            <li>li = 番号付きリスト</li>
+            <li>li = 番号付きリスト</li>
+            <li>li = 番号付きリスト</li>
+          </ol>
+          <hr />
+
+          <p>dl = 定義リスト</p>
+          <dl>
+            <dt>dt = 見出し</dt>
+            <dd>dd = リスト内容</dd>
+            <dt>dt = 見出し</dt>
+            <dd>dd = リスト内容</dd>
+          </dl>
+          <hr />
+
+          <p>table = テーブル</p>
+          <table>
+            <caption>caption = テーブル見出し</caption>
+            <thead>
+              <tr>
+                <th>th = テーブルヘッダ</th>
+                <th>th = テーブルヘッダ</th>
+                <th>th = テーブルヘッダ</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>th = テーブルヘッダ</th>
+                <td>td = テーブルデータ</td>
+                <td>td = テーブルデータ</td>
+              </tr>
+              <tr>
+                <th>th = テーブルヘッダ</th>
+                <td>td = テーブルデータ</td>
+                <td>td = テーブルデータ</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+
+      </section>
+      <aside>
+        <h2>aside = 補足情報</h2>
+        <p>関連リンクとか、広告とか</p>
+      </aside>
+      <footer>
+        <h2>footer = フッター</h2>
+        <address>address = 住所、リンク、メールアドレスなど</address>
+      </footer>
+    </div>
+  </body>
+</html>
